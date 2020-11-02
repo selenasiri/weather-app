@@ -10,12 +10,13 @@ body {
 
 .app {
   background-image: url('./assets/cold-bg.jpg');
-  background-size: cover;
+  background-size: 50%;
   background-position: bottom;
   transition: 0.4 ease-out;
 }
 
 .app.warm {
+  background-image: url('./assets/warm-bg.jpg');
 }
 
 main {
