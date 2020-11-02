@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import axios from 'axios'
 
-const MY_API = {
+const api = {
   key: "a25bf647af5a1e26d79456d892a32166",
   base: "http://api.openweathermap.org/data/2.5"
 }
@@ -11,7 +11,6 @@ const App = () => {
   const[weather, setWeather] = useState('');
 
   const search = async (event) => {
-    console.log('yyyyy')
     if (event.key !== 'Enter') {
       return
     }
@@ -19,7 +18,7 @@ const App = () => {
     console.log('enter press here! ')
     try {
       // http://api.openweathermap.org/data/2.5/weather?q=new%20jersey&units=metric&APPID=a25bf647af5a1e26d79456d892a32166
-      const response = await axios.get(`${MY_API.base}/weather?q=${query}&units=metric&APPID=${MY_API.key}`)
+      const response = await axios.get(`${api.base}/weather?q=${query}&units=metric&APPID=${api.key}`)
 
       const result = response.data
       console.log(result);
@@ -50,7 +49,7 @@ const App = () => {
           <input 
             type="text"
             className="search-bar"
-            placeholder="Search..."
+            placeholder="Search a city..."
             onChange={e => setQuery(e.target.value)}
             value={query}
             onKeyPress={search}
