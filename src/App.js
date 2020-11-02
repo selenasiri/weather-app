@@ -3,7 +3,7 @@ import axios from 'axios'
 
 const api = {
   key: "a25bf647af5a1e26d79456d892a32166",
-  base: "http://api.openweathermap.org/data/2.5"
+  base: "https://api.openweathermap.org/data/2.5"
 }
 
 const App = () => {
@@ -17,11 +17,11 @@ const App = () => {
 
     console.log('enter press here! ')
     try {
-      // http://api.openweathermap.org/data/2.5/weather?q=new%20jersey&units=metric&APPID=a25bf647af5a1e26d79456d892a32166
+      // https://api.openweathermap.org/data/2.5/weather?q=new%20jersey&units=metric&APPID=a25bf647af5a1e26d79456d892a32166
       const response = await axios.get(`${api.base}/weather?q=${query}&units=metric&APPID=${api.key}`)
 
       const result = response.data
-      console.log(result);
+      // console.log(result);
 
       setWeather(result);
       setQuery('');
