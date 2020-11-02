@@ -1,0 +1,44 @@
+{
+  "coord": {
+    "lon": -74.5,
+    "lat": 40.17
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 8.18,
+    "feels_like": -2.1,
+    "temp_min": 7.22,
+    "temp_max": 9,
+    "pressure": 1013,
+    "humidity": 26
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 10.3,
+    "deg": 300,
+    "gust": 16.5
+  },
+  "clouds": {
+    "all": 1
+  },
+  "dt": 1604347090,
+  "sys": {
+    "type": 1,
+    "id": 6267,
+    "country": "US",
+    "sunrise": 1604316542,
+    "sunset": 1604354040
+  },
+  "timezone": -18000,
+  "id": 5101760,
+  "name": "New Jersey",
+  "cod": 200
+}
